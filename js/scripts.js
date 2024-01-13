@@ -306,6 +306,11 @@
 		});
 		return false;
 	});
+
+   /*  Prevent Submit
+     from refreshing */
+    
+
     /* -------------------
     Subscribe form
     ---------------------*/

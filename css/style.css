@@ -50,6 +50,9 @@ Table of Contents:
 @import "simple-line-icons.css";
 @import "ionicons.min.css";
 
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 /*----- General ----*/
 html, 
 body {
@@ -451,7 +454,7 @@ p {
 	height: auto;
 	overflow-x: hidden;
 	overflow-y: hidden;
-	vertical-align: middle;
+	/* vertical-align: middle; */
 	z-index: 1;
    display: block;
    position: relative;
@@ -513,7 +516,7 @@ p {
 	height: auto;
 	overflow-x: hidden;
 	overflow-y: hidden;
-	vertical-align: middle;
+	/* vertical-align: middle; */
 	z-index: 1;
     display: block;
     position: relative;
@@ -2486,6 +2489,144 @@ blockquote strong {
     color: #aaa;
 }
 
+/* Toasts */
+
+:root {
+    --dark: #34495E;
+    --light: #ffffff;
+    --success: #91DA32;
+    --error: #E24D4C;
+    --warning: #E9BD0C;
+    --info: #3498DB;
+  }
+  
+.notifications {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Poppins', sans-serif;
+    z-index: 10;
+  }
+
+  .notifications :where(.toast, .toast_column) {
+    display: flex;
+    align-items: center;
+  }
+  
+  .notifications .toast {
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    border-radius: 4px;
+    padding: 16px 17px;
+    margin-bottom: 10px;
+    background: var(--light);
+    justify-content: space-between;
+    animation: show_toast 0.3s ease forwards;
+  }
+  @keyframes show_toast {
+    0% {
+        transform: translateX(100%);
+    }
+    40% {
+        transform: translateX(-5%);
+    }
+    80% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+  }
+
+  .notifications .toast.hide {
+    animation: hide_toast 0.3s ease forwards;
+  }
+  @keyframes hide_toast {
+    0% {
+        transform: translateX(-10px);
+    }
+    40% {
+        transform: translateX(0%);
+    }
+    80% {
+        transform: translateX(-5%);
+    }
+    100% {
+        transform: translateX(calc(100% + 20px));
+    }
+  }
+
+  .toast::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    animation: progress 5s linear forwards;
+  }
+  @keyframes progress {
+    100% {
+        width: 0%;
+    }
+  }
+
+  .toast.success::before {
+    background: var(--success);
+  }
+
+  .toast.error::before {
+    background: var(--error);
+  }
+
+  .toast.warning::before {
+    background: var(--warning);
+  }
+
+  .toast.info::before {
+    background: var(--info);
+  }
+
+  .toast .toast_column i {
+    font-size: 1.75rem;
+  }
+
+  .toast.success .toast_column i {
+    color: var(--success);
+  }
+
+  .toast.error .toast_column i {
+    color: var(--error);
+  }
+
+  .toast.warning .toast_column i{
+    color: var(--warning);
+  }
+
+  .toast.info .toast_column i{
+    color: var(--info);
+  }
+
+  .toast .toast_column span {
+    font-size: 1.07rem;
+    margin-left: 12px;
+  }
+
+  .toast i:last-child {
+    color: #aeb0d7;
+    cursor: pointer;
+  }
+
+  .toast i:last-child:hover {
+    color: var(--dark);
+  }
+
+
 /*----- Contact Form -----*/
 
 #contact {
@@ -2663,10 +2804,10 @@ border-bottom:1px dotted #ccc;
 }
 
 /*----- Google maps -----*/
-#map {
+/* #map {
     height:450px;
     width:100%;
-}
+} */
 
 /*----- Video Popup Section -----*/
 #video-section {
@@ -4014,3 +4155,8 @@ pre {
 	margin: -22px auto 0 auto;
 }
 
+
+.custom-modal {
+    background-color: #28a745;
+    color: #fff;
+  }
