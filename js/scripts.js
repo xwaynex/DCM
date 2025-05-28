@@ -595,6 +595,36 @@ for (var i = 0; i < profileBtn.length; i++) {
     }
 };
 
+document.querySelectorAll('.profileBtn').forEach(button => {
+    button.addEventListener('click', function () {
+      const li = button.closest('li.cbp-item');
+      const name = li.getAttribute('data-name');
+      const desc = li.getAttribute('data-description');
+      const img = li.getAttribute('data-img');
+      const occupation = li.getAttribute('data-occupation');
+      const height = li.getAttribute('data-height');
+      const eye = li.getAttribute('data-eye');
+
+      document.getElementById('profileName').textContent = name;
+      document.getElementById('profileDescription').textContent = desc;
+        document.getElementById('profileImg').src = img;
+      document.getElementById('profileOccupation').textContent = occupation;
+      document.getElementById('profileHeight').textContent = height;
+      document.getElementById('profileEye').textContent = eye;
+
+      document.getElementById('dynamicProfile').style.display = 'block';
+      document.getElementById('profileOverlay').style.display = 'block';
+    });
+  });
+
+  function closeProfile() {
+    document.getElementById('dynamicProfile').style.display = 'none';
+     document.getElementById('profileOverlay').style.display = 'none';
+  }
+
+  document.querySelector('.profile-close').addEventListener('click', closeProfile);
+
+
 //when the user clicks the &times close the profile
 for (var i = 0; i < profileClose.length; i++) {
     profileClose[i].onclick = function() {

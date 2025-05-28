@@ -2029,12 +2029,47 @@ blockquote strong {
 }
 
 .profile-close {
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 2rem;
-    font-weight: bold;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+
+
+.profile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  display: none;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.profile-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  padding: 20px;
+  z-index: 1000;
+  display: none;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+}
+
+.profile-card {
+  position: relative;
+  text-align: center;
 }
 
 .profile-header {
@@ -2061,6 +2096,25 @@ blockquote strong {
 
 .profile-body {
     padding: 10px 15px;
+}
+
+.profile-img-wrap img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+
+.profile-details {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  text-align: left;
+}
+
+.profile-details li {
+  margin: 8px 0;
 }
 
 .profile-close:hover,
