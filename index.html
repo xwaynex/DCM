@@ -8,6 +8,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>DCM</title>
+   <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192x192.png">
    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
    <!-- Stlylesheet -->
@@ -18,6 +19,9 @@
 
    <!-- Font Awesome CND link For icons -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+
 
    <!-- Skin Color -->
    <link rel="stylesheet" href="css/colors/green.css" id="color-skins" />
@@ -170,7 +174,7 @@
                         data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300"
                         style="z-index: 4; max-width: auto; max-height: auto; white-space:normal;">
                         <div class="op-2">
-                           <a href="#about" class="btn btn-primary btn-scroll">
+                           <a href="#price-list" class="btn btn-primary btn-scroll">
                               WHAT WE DO
                            </a>
                         </div>
@@ -426,168 +430,98 @@
                <p class="subheading">Interdisciplinary team with <span class="highlight">big ideas</span> and
                   challenges.</p>
             </div>
+
+            <!-- Team Members Section -->
             <div class="row">
-               <div class="col-md-3 col-sm-3 team-member">
+               <!-- Team Member -->
+               <div class="col-md-3 col-sm-3 team-member" data-name="Eric Dawson" data-role="CEO / Founder"
+                  data-description="Eric is the visionary founder and CEO of our company. With over 20 years of experience in business leadership, Eric has led several startups to success and continues to drive innovation across teams."
+                  data-img="img/team/team-1.jpg">
+
                   <div class="effect effects wow fadeInUp">
                      <div class="img">
-                        <img src="img/team/team-1.jpg" class="img-responsive" alt="" />
+                        <img src="img/team/team-1.jpg" class="img-responsive" alt="Eric Dawson" />
                         <div class="overlay">
-                           <ul class="expand">
-                              <li class="social-icon">
-                                 <a href="#" onClick="return false;">
-                                    <i class="icon-social-facebook"></i>
-                                 </a>
-                              </li>
-                              <li class="social-icon">
-                                 <a href="#" onClick="return false;">
-                                    <i class="icon-social-twitter"></i>
-                                 </a>
-                              </li>
-                              <li class="social-icon">
-                                 <a href="#" onClick="return false;">
-                                    <i class=" icon-envelope-open"></i>
-                                 </a>
-                              </li>
-                           </ul>
-                           <a class="close-overlay hidden">
-                              x
-                           </a>
+                           <a class="close-overlay hidden">x</a>
                         </div>
                      </div>
                   </div>
+
                   <div class="member-info wow fadeInUp">
                      <h4>Eric Dawson</h4>
                      <h5 class="highlight">CEO / Founder</h5>
-                     <p>Eric, the company's managing director<span id="dots">...</span>
-                         <!-- <span id="firstTarget"
-                           class="extra_content">he has been in the media business for more than three decades. Eric has
-                           extensive experience in both the television and music industries</span></p>
-                     <button id="moreBtn" class="more" data-target="firstTarget">Show More</button> -->
+                     <p>Eric is the company's managing director and driving force behind our vision...</p>
                   </div>
                </div>
-               <div class="col-md-3 col-sm-3 team-member">
+
+               <!-- Repeat for other members -->
+               <div class="col-md-3 col-sm-3 team-member" data-name="Izna Shetty" data-role="COO"
+                  data-description="Izna oversees day-to-day operations and brings years of media and operations experience. Known for her sharp strategic thinking and ability to build partnerships, she is a vital part of the executive team."
+                  data-img="img/team/team-2.jpg">
+
                   <div class="effect effects wow fadeInUp">
                      <div class="img">
-                        <img src="img/team/team-2.jpg" class="img-responsive" alt="" />
+                        <img src="img/team/team-2.jpg" class="img-responsive" alt="Izna Shetty" />
                         <div class="overlay">
-                           <ul class="expand">
-                              <li class="social-icon">
-                                 <a href="#" onClick="return false;">
-                                    <i class="icon-social-facebook"></i>
-                                 </a>
-                              </li>
-                              <li class="social-icon">
-                                 <a href="#" onClick="return false;">
-                                    <i class="icon-social-twitter"></i>
-                                 </a>
-                              </li>
-                              <li class="social-icon">
-                                 <a href="#" onClick="return false;">
-                                    <i class=" icon-envelope-open"></i>
-                                 </a>
-                              </li>
-                           </ul>
-                           <a class="close-overlay hidden">
-                              x
-                           </a>
+                           <a class="close-overlay hidden">x</a>
                         </div>
                      </div>
                   </div>
                   <div class="member-info wow fadeInUp">
                      <h4>Izna Shetty</h4>
                      <h5 class="highlight">COO</h5>
-                     <p>Izna is well-known to all of the famous TV personalities in broadcasting <span
-                           id="dots">...</span>
-                           <!-- <span id="secondTarget" class="extra_content">and has established a
-                           reputation over the years with a number of unmatched contacts to her credit. Izna makes sure
-                           that every project we work on is completed to a very high standard. In terms of efficiency,
-                           she is constantly coming up with new ideas to ensure that the business carries out its daily
-                           operations with the utmost efficiency. Her friendly and charismatic personality makes her a
-                           very likable person.</span> </p>
-                     <button id="moreBtn" class="more" data-target="secondTarget">Show More</button> -->
+                     <p>Izna is well-known to all of the famous TV personalities in broadcasting...</p>
                   </div>
                </div>
-               <div class="col-md-3 col-sm-3 team-member">
+
+               <div class="col-md-3 col-sm-3 team-member" data-name="Mary Fairchild" data-role="Head of PRM & CRM"
+                  data-description="Mary leads our customer relations and public reputation management departments. Her efforts are instrumental in growing our customer base and managing long-term engagement."
+                  data-img="img/team/team-3.jpg">
                   <div class="effect effects wow fadeInUp">
                      <div class="img">
-                        <img src="img/team/team-3.jpg" class="img-responsive" alt="" />
+                        <img src="img/team/team-3.jpg" class="img-responsive" alt="Mary Fairchild" />
                         <div class="overlay">
-                           <ul class="expand">
-                              <li class="social-icon">
-                                 <a href="#" onClick="return false;">
-                                    <i class="icon-social-facebook"></i>
-                                 </a>
-                              </li>
-                              <li class="social-icon">
-                                 <a href="#" onClick="return false;">
-                                    <i class="icon-social-twitter"></i>
-                                 </a>
-                              </li>
-                              <li class="social-icon">
-                                 <a href="#" onClick="return false;">
-                                    <i class=" icon-envelope-open"></i>
-                                 </a>
-                              </li>
-                           </ul>
-                           <a class="close-overlay hidden">
-                              x
-                           </a>
+                           <a class="close-overlay hidden">x</a>
                         </div>
                      </div>
                   </div>
                   <div class="member-info wow fadeInUp">
                      <h4>Mary Fairchild</h4>
                      <h5 class="highlight">Head of PRM & CRM</h5>
-                     <p>Vivamus motestues phasellus enim sed orci eu pharetra<span id="dots">...</span> 
-                        <!-- <span
-                           id="thirdTarget" class="extra_content">He also manages social media accounts, websites,
-                           on-line shops, marketing campaigns, reputation & social media endorsement deals.</span> </p>
-                     <button id="moreBtn" class="more" data-target="thirdTarget">Show More</button> -->
+                     <p>Mary is responsible for building customer loyalty and engagement programs...</p>
                   </div>
                </div>
-               <div class="col-md-3 col-sm-3 team-member">
+
+               <div class="col-md-3 col-sm-3 team-member" data-name="Micheal Astley" data-role="IT Director"
+                  data-description="Micheal brings a decade of expertise in IT systems architecture, cybersecurity, and infrastructure. He ensures all our platforms are secure, scalable, and resilient."
+                  data-img="img/team/team-4.jpg">
                   <div class="effect effects wow fadeInUp">
                      <div class="img">
-                        <img src="img/team/team-4.jpg" class="img-responsive" alt="" />
+                        <img src="img/team/team-4.jpg" class="img-responsive" alt="Micheal Astley" />
                         <div class="overlay">
-                           <ul class="expand">
-                              <li class="social-icon">
-                                 <a href="#" onClick="return false;">
-                                    <i class="icon-social-facebook"></i>
-                                 </a>
-                              </li>
-                              <li class="social-icon">
-                                 <a href="#" onClick="return false;">
-                                    <i class="icon-social-twitter"></i>
-                                 </a>
-                              </li>
-                              <li class="social-icon">
-                                 <a href="#" onClick="return false;">
-                                    <i class=" icon-envelope-open"></i>
-                                 </a>
-                              </li>
-                           </ul>
-                           <a class="close-overlay hidden">
-                              x
-                           </a>
+                           <a class="close-overlay hidden">x</a>
                         </div>
                      </div>
                   </div>
                   <div class="member-info wow fadeInUp">
                      <h4>Micheal Astley</h4>
                      <h5 class="highlight">IT Director</h5>
-                     <p>Micheal is an IT security and infrastructure expert with a proven track record <span id="dots">...</span>
-                        <!-- <span id="fourthTarget"
-                         of working for
-                        high-profile individuals and organizations.
-                           class="extra_content">He has extensive experience in IT architecture, disaster recovery,
-                           business continuity, custom cloud infrastructures, server administration, deployment,
-                           diagnostics, virtualization, and defensive cyber security.
-                           He helps our clients who have appeared on TV shows such as Love Island, Big Brother, The
-                           Chase, TOWIE, The X Factor, Dancing on Ice, and others with their cyber security and the
-                           company as a whole.</span></p>
-                     <button id="moreBtn" class="more" data-target="fourthTarget">Show more</button> -->
+                     <p>Micheal is an IT security and infrastructure expert with a proven track record...</p>
                   </div>
+               </div>
+            </div>
+
+            <!-- Team Modal -->
+            <div id="teamProfileOverlay" class="profile-overlay"></div>
+            <div id="profileModal" class="profile-modal" style="display:none;">
+               <div class="profile-card">
+                  <button id="teamClose" class="profile-close">&times;</button>
+                  <div class="profile-img-wrap">
+                     <img id="modalProfileImg" src="" alt="Profile Image" />
+                  </div>
+                  <h2 id="modalProfileName"></h2>
+                  <h5 id="modalProfileRole" class="highlight"></h5>
+                  <p id="modalProfileDesc"></p>
                </div>
             </div>
          </div>
@@ -657,6 +591,9 @@
          Avril Ramona Lavigne (Canadian singer and songwriter)
          Keith Lionel Urbahn ( Australian-American musician, singer, guitarist)
          Leonard Albert Kravitz (American singer-songwriter, record producer, multi-instrumentalist)
+          data-name=""
+         data-description="" data-img=""
+         data-occupation="" data-height="" data-eye="" 
  -->
       <section id="portfolio" style="position: relative;">
          <div class="separator"></div>
@@ -690,7 +627,7 @@
                <ul>
                   <li class="cbp-item effect effects identity logo" data-name="Leena Jumani"
                      data-description="Indian actress and more bio here..." data-img="img/portfolio/fullsize/1.jpg"
-                     data-occupation="Actress" data-height="5'5\" data-eye=" Brown">
+                     data-occupation="Actress" data-height="5'5" data-eye=" Brown">
                      <div class="img">
                         <img src="img/portfolio/1.jpg" class="img-responsive" alt="" />
                         <div class="overlay">
@@ -698,16 +635,10 @@
 
                               <li class="cbp-l-icon">
                                  <a href="img/portfolio/fullsize/1.jpg" class="cbp-lightbox"
-                                    data-title="Dashboard<br>by Visual">
-                                    <i class="icon-magnifier"></i>
+                                    data-title="Leena Jumani<br>by DCM">
+                                    <i class="icon-camera"></i>
                                  </a>
                               </li>
-                              
-                              <!-- <li class="cbp-l-icon">
-                                 <a href="projects/project1.html" class="cbp-singlePage">
-                                    <i class="icon-link"></i>
-                                 </a>
-                              </li> -->
 
                               <li class="cbp-l-caption-title"><button class="profileBtn"> Leena Jumani</button></li>
                               <li class="cbp-l-caption-desc">Indian actress
@@ -718,22 +649,19 @@
                   </li>
                   <li class="cbp-item effect effects identity logo" data-name="Priyanka Chopra"
                      data-description="second Indian actress and more bio here..."
-                     data-img="img/portfolio/fullsize/2.jpg">
+                     data-img="img/portfolio/fullsize/2.jpg" data-occupation="Actress" data-height="5'11"
+                     data-eye=" Pink">
                      <div class="img">
                         <img src="img/portfolio/2.jpg" class="img-responsive" alt="" />
                         <div class="overlay">
                            <ul class="expand">
                               <li class="cbp-l-icon">
                                  <a href="img/portfolio/fullsize/2.jpg" class="cbp-lightbox"
-                                    data-title="Dashboard<br>by Visual">
-                                    <i class="icon-magnifier"></i>
+                                    data-title="Dashboard<br>by DCM">
+                                    <i class="icon-camera"></i>
                                  </a>
                               </li>
-                              <li class="cbp-l-icon">
-                                 <a href="projects/project2.html" class="cbp-singlePage">
-                                    <i class="icon-link"></i>
-                                 </a>
-                              </li>
+
                               <li class="cbp-l-caption-title"> <button class="profileBtn">Priyanka Chopra</button> </li>
                               <li class="cbp-l-caption-desc">Indian actress</li>
                            </ul>
@@ -741,22 +669,20 @@
                      </div>
                   </li>
                   <li class="cbp-item effect effects web-design" data-name="Can Yaman"
-                     data-description="Turkish actor and more bio here..." data-img="img/portfolio/fullsize/2.jpg">
+                     data-description="Turkish actor and more bio here..." data-img="img/portfolio/3.jpg"
+                     data-occupation="Actor" data-height="6'5" data-eye=" Blue">
                      <div class="img">
                         <img src="img/portfolio/3.jpg" class="img-responsive" alt="" />
                         <div class="overlay">
                            <ul class="expand">
+
                               <li class="cbp-l-icon">
                                  <a href="img/portfolio/fullsize/3.jpg" class="cbp-lightbox"
-                                    data-title="Dashboard<br>by Visual">
-                                    <i class="icon-magnifier"></i>
+                                    data-title="Dashboard<br>by DCM">
+                                    <i class="icon-camera"></i>
                                  </a>
                               </li>
-                              <li class="cbp-l-icon">
-                                 <a href="projects/project3.html" class="cbp-singlePage">
-                                    <i class="icon-link"></i>
-                                 </a>
-                              </li>
+
                               <li class="cbp-l-caption-title"> <button class="profileBtn">Can Yaman</button> </li>
                               <li class="cbp-l-caption-desc">Turkish actor
                               </li>
@@ -771,13 +697,8 @@
                            <ul class="expand">
                               <li class="cbp-l-icon">
                                  <a class="cbp-lightbox" href="https://www.youtube.com/watch?v=3wbvpOIIBQA"
-                                    data-title="Dashboard<br>by Visual">
-                                    <i class="icon-magnifier"></i>
-                                 </a>
-                              </li>
-                              <li class="cbp-l-icon">
-                                 <a href="projects/project4.html" class="cbp-singlePage">
-                                    <i class="icon-link"></i>
+                                    data-title="Dashboard<br>by DCM">
+                                    <i class="icon-camera"></i>
                                  </a>
                               </li>
                               <li class="cbp-l-caption-title">Clint Eastwood </li>
@@ -793,13 +714,8 @@
                            <ul class="expand">
                               <li class="cbp-l-icon">
                                  <a href="img/portfolio/fullsize/5.jpg" class="cbp-lightbox"
-                                    data-title="Dashboard<br>by Visual">
-                                    <i class="icon-magnifier"></i>
-                                 </a>
-                              </li>
-                              <li class="cbp-l-icon">
-                                 <a href="projects/project5.html" class="cbp-singlePage">
-                                    <i class="icon-link"></i>
+                                    data-title="Dashboard<br>by DCM">
+                                    <i class="icon-camera"></i>
                                  </a>
                               </li>
                               <li class="cbp-l-caption-title">Lee Joon Gi </li>
@@ -815,17 +731,12 @@
                            <ul class="expand">
                               <li class="cbp-l-icon">
                                  <a href="https://www.youtube.com/watch?v=9No-FiEInLA" class="cbp-lightbox"
-                                    data-title="Dashboard<br>by Visual">
-                                    <i class="icon-magnifier"></i>
-                                 </a>
-                              </li>
-                              <li class="cbp-l-icon">
-                                 <a href="projects/project6.html" class="cbp-singlePage">
-                                    <i class="icon-link"></i>
+                                    data-title="Dashboard<br>by DCM">
+                                    <i class="icon-camera"></i>
                                  </a>
                               </li>
                               <li class="cbp-l-caption-title">Brad Pitt</li>
-                              <li class="cbp-l-caption-desc">by Visual Design</li>
+                              <li class="cbp-l-caption-desc">by DCM Design</li>
                            </ul>
                         </div>
                      </div>
@@ -837,17 +748,12 @@
                            <ul class="expand">
                               <li class="cbp-l-icon">
                                  <a href="img/portfolio/fullsize/7.jpg" class="cbp-lightbox"
-                                    data-title="Dashboard<br>by Visual">
-                                    <i class="icon-magnifier"></i>
-                                 </a>
-                              </li>
-                              <li class="cbp-l-icon">
-                                 <a href="projects/project7.html" class="cbp-singlePage">
-                                    <i class="icon-link"></i>
+                                    data-title="Dashboard<br>by DCM">
+                                    <i class="icon-camera"></i>
                                  </a>
                               </li>
                               <li class="cbp-l-caption-title">Red Bridge</li>
-                              <li class="cbp-l-caption-desc">by Visual Design</li>
+                              <li class="cbp-l-caption-desc">by DCM Design</li>
                            </ul>
                         </div>
                      </div>
@@ -859,17 +765,12 @@
                            <ul class="expand">
                               <li class="cbp-l-icon">
                                  <a href="img/portfolio/fullsize/8.jpg" class="cbp-lightbox"
-                                    data-title="Dashboard<br>by Visual">
-                                    <i class="icon-magnifier"></i>
-                                 </a>
-                              </li>
-                              <li class="cbp-l-icon">
-                                 <a href="projects/project8.html" class="cbp-singlePage">
-                                    <i class="icon-link"></i>
+                                    data-title="Dashboard<br>by DCM">
+                                    <i class="icon-camera"></i>
                                  </a>
                               </li>
                               <li class="cbp-l-caption-title">V8 M52 Engine</li>
-                              <li class="cbp-l-caption-desc">by Visual Design</li>
+                              <li class="cbp-l-caption-desc">by DCM Design</li>
                            </ul>
                         </div>
                      </div>
@@ -881,17 +782,12 @@
                            <ul class="expand">
                               <li class="cbp-l-icon">
                                  <a href="https://vimeo.com/16465813" class="cbp-lightbox"
-                                    data-title="Dashboard<br>by Visual">
-                                    <i class="icon-magnifier"></i>
-                                 </a>
-                              </li>
-                              <li class="cbp-l-icon">
-                                 <a href="projects/project9.html" class="cbp-singlePage">
-                                    <i class="icon-link"></i>
+                                    data-title="Dashboard<br>by DCM">
+                                    <i class="icon-camera"></i>
                                  </a>
                               </li>
                               <li class="cbp-l-caption-title">Ergonomic Pad</li>
-                              <li class="cbp-l-caption-desc">by Visual Design</li>
+                              <li class="cbp-l-caption-desc">by DCM Design</li>
                            </ul>
                         </div>
                      </div>
@@ -903,17 +799,12 @@
                            <ul class="expand">
                               <li class="cbp-l-icon">
                                  <a href="img/portfolio/fullsize/10.jpg" class="cbp-lightbox"
-                                    data-title="Dashboard<br>by Visual">
-                                    <i class="icon-magnifier"></i>
-                                 </a>
-                              </li>
-                              <li class="cbp-l-icon">
-                                 <a href="projects/project10.html" class="cbp-singlePage">
-                                    <i class="icon-link"></i>
+                                    data-title="Dashboard<br>by DCM">
+                                    <i class="icon-camera"></i>
                                  </a>
                               </li>
                               <li class="cbp-l-caption-title">Cooling Tower</li>
-                              <li class="cbp-l-caption-desc">by Visual Design</li>
+                              <li class="cbp-l-caption-desc">by DCM Design</li>
                            </ul>
                         </div>
                      </div>
@@ -925,17 +816,12 @@
                            <ul class="expand">
                               <li class="cbp-l-icon">
                                  <a href="img/portfolio/fullsize/11.jpg" class="cbp-lightbox"
-                                    data-title="Dashboard<br>by Visual">
-                                    <i class="icon-magnifier"></i>
-                                 </a>
-                              </li>
-                              <li class="cbp-l-icon">
-                                 <a href="projects/project11.html" class="cbp-singlePage">
-                                    <i class="icon-link"></i>
+                                    data-title="Dashboard<br>by DCM">
+                                    <i class="icon-camera"></i>
                                  </a>
                               </li>
                               <li class="cbp-l-caption-title">Still Motion</li>
-                              <li class="cbp-l-caption-desc">by Visual Design</li>
+                              <li class="cbp-l-caption-desc">by DCM Design</li>
                            </ul>
                         </div>
                      </div>
@@ -947,17 +833,12 @@
                            <ul class="expand">
                               <li class="cbp-l-icon">
                                  <a href="img/portfolio/fullsize/12.jpg" class="cbp-lightbox"
-                                    data-title="Dashboard<br>by Visual">
-                                    <i class="icon-magnifier"></i>
-                                 </a>
-                              </li>
-                              <li class="cbp-l-icon">
-                                 <a href="projects/project12.html" class="cbp-singlePage">
-                                    <i class="icon-link"></i>
+                                    data-title="Dashboard<br>by DCM">
+                                    <i class="icon-camera"></i>
                                  </a>
                               </li>
                               <li class="cbp-l-caption-title">Print Design</li>
-                              <li class="cbp-l-caption-desc">by Visual Design</li>
+                              <li class="cbp-l-caption-desc">by DCM Design</li>
                            </ul>
                         </div>
                      </div>
@@ -968,17 +849,12 @@
                      <div class="overlay">
                         <ul class="expand">
                            <li class="cbp-l-icon">
-                              <a href="img/portfolio/fullsize/12.jpg" class="cbp-lightbox" data-title="Dashboard<br>by Visual">
+                              <a href="img/portfolio/fullsize/12.jpg" class="cbp-lightbox" data-title="Dashboard<br>by DCM">
                                  <i class="icon-magnifier"></i>
                               </a>
                            </li>
-                           <li class="cbp-l-icon">
-                              <a href="projects/project12.html" class="cbp-singlePage">
-                                 <i class="icon-link"></i>
-                              </a>
-                           </li>
                            <li class="cbp-l-caption-title">Print Design</li>
-                           <li class="cbp-l-caption-desc">by Visual Design</li>
+                           <li class="cbp-l-caption-desc">by DCM Design</li>
                         </ul>
                      </div>
                   </div>
@@ -1002,16 +878,11 @@
          </div>
       </section>
 
-      <!-- Single reusable model -->
-
-      <!-- data-name=""
-      data-description="" data-img="" -->
-
-      <div id="profileOverlay" class="profile-overlay" onclick="closeProfile()"></div>
-
+      <!-- Celeb Model -->
+      <div id="profileOverlay" class="profile-overlay"></div>
       <div id="dynamicProfile" class="profile-modal">
          <div class="profile-card">
-            <button class="profile-close" onclick="closeProfile()">&times;</button>
+            <button id="celebClose" class="profile-close">&times;</button>
             <div class="profile-img-wrap">
                <img id="profileImg" src="" alt="Profile Picture" />
             </div>
@@ -1024,11 +895,10 @@
             </ul>
          </div>
       </div>
-
       <!-- End Portfolio Section -->
 
       <!-- Start Get Connected -->
-      <section id="services" class="parallax-section-9">
+      <!-- <section id="services" class="parallax-section-9">
          <div class="container">
             <div class="col-md-12 text-center">
                <h3 class="section-title wow fadeInUp">What we do.</h3>
@@ -1100,7 +970,7 @@
                </div>
             </div>
          </div>
-      </section>
+      </section> -->
       <!-- End Services Section -->
 
       <!-- Start Clients Section -->
@@ -1158,111 +1028,100 @@
          <div class="container">
             <div class="row">
                <div class="col-md-12 text-center">
-                  <h3 class="section-title wow fadeInUp"> Pricing Table </h3>
-                  <p class="subheading wow fadeInUp">Meet our clients, some of the most well known companies.</p>
+                  <h3 class="section-title wow fadeInUp">Our Services</h3>
+                  <p class="subheading wow fadeInUp">Book celebrity experiences and services tailored to your needs.</p>
                </div>
                <div class="pricing_table">
                   <div class="container">
+
+                     <!-- Tier 1: Virtual Shout-Out -->
                      <div class="col-md-3 col-sm-6">
                         <div class="planbox">
                            <div class="title">
-                              <h4><strong>Starter</strong></h4>
+                              <h4><strong>Virtual Shout-Out</strong></h4>
                            </div>
                            <div class="prices">
-                              <strong>$2.99<i>/M</i></strong>
-                              <b>Regularly <em>$4.99</em></b>
-                              <a href="#">
-                                 Sign Up
-                              </a>
+                              <strong>$49<i>/video</i></strong>
+                              <b>Regularly <em>$75</em></b>
+                              <a href="#">Book Now</a>
                            </div>
                            <ul>
-                              <li><strong>Unlimited</strong> Web Space</li>
-                              <li><strong>FREE</strong> Site Building Tools</li>
-                              <li><strong>FREE</strong> Domain Registar</li>
-                              <li><strong>24/7/365</strong> Support </li>
-                              <li><strong>FREE</strong> Marketing &amp; SEO Tools</li>
-                              <li><strong>99.9%</strong> Service Uptime</li>
-                              <li class="last"><strong>30 Day</strong> Money Back Guarantee</li>
+                              <li><strong>1-Minute</strong> Personalized Video</li>
+                              <li><strong>Delivered</strong> Within 72 Hours</li>
+                              <li>Perfect for Birthdays, Shout-outs</li>
+                              <li class="last"><strong>One-Time</strong> Purchase</li>
                            </ul>
                         </div>
                      </div>
-                     <!-- end plan -->
 
+                     <!-- Tier 2: Event Appearance -->
                      <div class="col-md-3 col-sm-6">
                         <div class="planbox highlight">
                            <div class="title">
-                              <h4 class="caps"><strong>Business</strong></h4>
+                              <h4><strong>Event Appearance</strong></h4>
                            </div>
                            <div class="prices">
-                              <strong>$9.75<i>/M</i></strong>
-                              <b>Regularly <em>$16.99</em></b>
-                              <a href="#">
-                                 Sign Up
-                              </a>
+                              <strong>$750<i>/event</i></strong>
+                              <b>Regularly <em>$1200</em></b>
+                              <a href="#">Book Now</a>
                            </div>
                            <ul>
-                              <li><strong>Unlimited</strong> Web Space</li>
-                              <li><strong>FREE</strong> Site Building Tools</li>
-                              <li><strong>FREE</strong> Domain Registar</li>
-                              <li><strong>24/7/365</strong> Support </li>
-                              <li><strong>FREE</strong> Marketing &amp; SEO Tools</li>
-                              <li><strong>99.9%</strong> Service Uptime</li>
-                              <li class="last"><strong>30 Day</strong> Money Back Guarantee</li>
+                              <li><strong>Up to 1 Hour</strong> Event Attendance</li>
+                              <li><strong>Virtual or In-Person*</strong></li>
+                              <li>Photo Opportunities & Meet/Greet</li>
+                              <li class="last"><strong>Custom Scheduling</strong> Available</li>
                            </ul>
                         </div>
                      </div>
-                     <!-- end plan -->
 
+                     <!-- Tier 3: Live 1:1 Session -->
                      <div class="col-md-3 col-sm-6">
                         <div class="planbox">
                            <div class="title">
-                              <h4 class="caps"><strong>Premium</strong></h4>
+                              <h4><strong>Live 1:1 Session</strong></h4>
                            </div>
                            <div class="prices">
-                              <strong>$45.50<i>/M</i></strong>
-                              <b>Regularly <em>$90.50</em></b>
-                              <a href="#">
-                                 Sign Up
-                              </a>
+                              <strong>$299<i>/30min</i></strong>
+                              <b>Regularly <em>$450</em></b>
+                              <a href="#">Book Now</a>
                            </div>
                            <ul>
-                              <li><strong>Unlimited</strong> Web Space</li>
-                              <li><strong>FREE</strong> Site Building Tools</li>
-                              <li><strong>FREE</strong> Domain Registar</li>
-                              <li><strong>24/7/365</strong> Support </li>
-                              <li><strong>FREE</strong> Marketing &amp; SEO Tools</li>
-                              <li><strong>99.9%</strong> Service Uptime</li>
-                              <li class="last"><strong>30 Day</strong> Money Back Guarantee</li>
+                              <li><strong>Private</strong> Zoom/Video Call</li>
+                              <li><strong>Flexible</strong> Time Slots</li>
+                              <li><strong>Direct Interaction</strong> with Talent</li>
+                              <li class="last"><strong>Recording</strong> Available Upon Request</li>
                            </ul>
                         </div>
                      </div>
-                     <!-- end plan -->
 
+                     <!-- Tier 4: Full Day Booking -->
                      <div class="col-md-3 col-sm-6 last">
                         <div class="planbox">
                            <div class="title">
-                              <h4 class="caps"><strong>Dedicated</strong></h4>
+                              <h4><strong>Full Day Booking</strong></h4>
                            </div>
                            <div class="prices">
-                              <strong>$100<i>/M</i></strong>
-                              <b>Regularly <em>$200</em></b>
-                              <a href="#">
-                                 Sign Up
-                              </a>
+                              <strong>$5,000<i>/day</i></strong>
+                              <b>Regularly <em>$8,000</em></b>
+                              <a href="#">Inquire Now</a>
                            </div>
                            <ul>
-                              <li><strong>Unlimited</strong> Web Space</li>
-                              <li><strong>FREE</strong> Site Building Tools</li>
-                              <li><strong>FREE</strong> Domain Registar</li>
-                              <li><strong>24/7/365</strong> Support </li>
-                              <li><strong>FREE</strong> Marketing &amp; SEO Tools</li>
-                              <li><strong>99.9%</strong> Service Uptime</li>
-                              <li class="last"><strong>30 Day</strong> Money Back Guarantee</li>
+                              <li><strong>On-Site or Virtual</strong> Availability</li>
+                              <li><strong>Interviews, Events, Endorsements</strong></li>
+                              <li><strong>Brand Collaborations</strong></li>
+                              <li class="last"><strong>Custom Contracts</strong> Supported</li>
                            </ul>
                         </div>
                      </div>
-                     <!-- end plan -->
 
+                     <!-- Disclaimer -->
+                     <div class="col-md-12 text-center mt-4">
+                        <p class="text-muted highlight  fadeInUp" style="font-size: 1rem; margin-top: 40px;">
+                           <em>*In-person appearances are subject to talent availability and may require additional fees
+                              for travel and accommodations. Please contact our team for custom arrangements and
+                              contracts.</em>
+                        </p>
+                     </div>
                   </div>
                </div>
                <!-- end hosting plans -->

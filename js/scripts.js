@@ -583,7 +583,7 @@ var profileBtn = document.querySelectorAll("button.profileBtn");
 var profileClose = document.getElementsByClassName("profile-close");
 
 //profile-overlay
-const profileOverlay = document.getElementById("profile-overlay")
+const profileOverlay = document.getElementById("profileOverlay")
 
 //when the user clicks the button, open profile
 for (var i = 0; i < profileBtn.length; i++) {
@@ -622,7 +622,43 @@ document.querySelectorAll('.profileBtn').forEach(button => {
      document.getElementById('profileOverlay').style.display = 'none';
   }
 
-  document.querySelector('.profile-close').addEventListener('click', closeProfile);
+  document.getElementById('celebClose').addEventListener('click', closeProfile);
+  profileOverlay.addEventListener('click', closeProfile )
+
+  document.addEventListener('DOMContentLoaded', () => {
+  const members = document.querySelectorAll('.team-member');
+
+  members.forEach(member => {
+    member.addEventListener('click', () => {
+      const name = member.dataset.name;
+      const role = member.dataset.role;
+      const description = member.dataset.description;
+      const img = member.dataset.img;
+
+      showProfile(name, role, description, img);
+    });
+  });
+
+//   document.querySelector('.profile-close').addEventListener('click', closeProfileModal);
+  document.getElementById('teamProfileOverlay').addEventListener('click', closeProfileModal);
+  document.getElementById('teamClose').addEventListener('click', closeProfileModal);
+});
+
+  function showProfile(name, role, description, img) {
+  document.getElementById('modalProfileName').textContent = name;
+  document.getElementById('modalProfileDesc').textContent = description;
+  document.getElementById('modalProfileImg').src = img;
+  document.getElementById('modalProfileRole').textContent = role;
+
+  document.getElementById('profileModal').style.display = 'block';
+  document.getElementById('teamProfileOverlay').style.display = 'block';
+}
+
+function closeProfileModal() {
+  document.getElementById('profileModal').style.display = 'none';
+  document.getElementById('teamProfileOverlay').style.display = 'none';
+}
+
 
 
 //when the user clicks the &times close the profile
