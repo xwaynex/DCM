@@ -48,7 +48,9 @@ const createToast = (id, toastClass) => {
  toast.timeoutId = setTimeout(() => removeToast(toast), toastDetails.timer);
 };
 
-function sendContact(event) {
+document.getElementById("contactForm").addEventListener("submit", (e) => {
+   e.preventDefault();
+   
   let ebody = `
   <b>Name: </b> ${clientName.value}
   <br />
@@ -79,7 +81,6 @@ function sendContact(event) {
     }
   });
 
-  event.preventDefault();
   return false;
-}
+})
 
