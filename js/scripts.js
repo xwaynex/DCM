@@ -703,20 +703,23 @@ function initForm() {
           select.append(opt);
         });
 
-      // Initialize Select2 with flags
+      // ✅ Only call Select2 *after* the options are fully added
       $("#country").select2({
         templateResult: formatCountry,
         templateSelection: formatCountry,
         placeholder: "Select your country",
         allowClear: true,
       });
+    })
+    .catch((err) => {
+      console.error("Failed to load countries", err);
     });
 }
 
 // Render country select options with flags
 function formatCountry(country) {
   if (!country.id) return country.text;
-  const flagURL = country.element.getAttribute('data-flag');
+  const flagURL = country.element.getAttribute("data-flag");
   const $container = $(`
     <span><img src="${flagURL}" style="width: 20px; vertical-align: middle; margin-right: 8px;" /> ${country.text}</span>
   `);
