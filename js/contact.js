@@ -51,19 +51,43 @@ const createToast = (id, toastClass) => {
 document.getElementById("contactForm").addEventListener("submit", (e) => {
    e.preventDefault();
    
-  let ebody = `
-  <b>Name: </b> ${clientName.value}
-  <br />
-  <b>Email: </b> ${clientEmail.value}
-  <br />
-  <b>Phone No: </b> ${clientPhoneNo.value}
-  <br />
-  <b>Country: </b> ${clientCountry.value}
-  <br />
-  <b>Query: </b> ${clientMessage.value}
-  <br />
-  
-  `;
+  const ebody = `
+  <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px;">
+    <div style="text-align: center; margin-bottom: 20px;">
+      <img src="https://i.postimg.cc/XY5jRHBZ/logo-dark.png" alt="Company Logo" style="max-height: 50px;" />
+    </div>
+
+    <h2 style="color: #2c3e50;">New Client Enquiry</h2>
+
+    <table style="width: 100%; border-collapse: collapse;">
+      <tr>
+        <td style="padding: 8px; font-weight: bold; color: #555;">Name:</td>
+        <td style="padding: 8px;">${clientName.value}</td>
+      </tr>
+      <tr style="background-color: #f9f9f9;">
+        <td style="padding: 8px; font-weight: bold; color: #555;">Email:</td>
+        <td style="padding: 8px;">${clientEmail.value}</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; font-weight: bold; color: #555;">Phone Number:</td>
+        <td style="padding: 8px;">${clientPhoneNo.value}</td>
+      </tr>
+      <tr style="background-color: #f9f9f9;">
+        <td style="padding: 8px; font-weight: bold; color: #555;">Country:</td>
+        <td style="padding: 8px;">${clientCountry.value}</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; font-weight: bold; color: #555;">Message:</td>
+        <td style="padding: 8px;">${clientMessage.value}</td>
+      </tr>
+    </table>
+
+    <div style="margin-top: 30px; text-align: center; font-size: 12px; color: #999;">
+      <p>&copy; ${new Date().getFullYear()} DCM. All rights reserved.</p>
+    </div>
+  </div>
+`;
+
 
   Email.send({
     SecureToken: "4bf53602-bc9d-44ee-b742-37c850f5a2a1",
