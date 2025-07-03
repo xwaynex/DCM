@@ -9,7 +9,7 @@ const toastDetails = {
   timer: 5000,
   1: {
     icon: "fa-circle-check",
-    text: "Success: Contact sent Succesfully.",
+    text: "Success: Contact sent Successfully.",
   },
   2: {
     icon: "fa-circle-xmark",
@@ -17,7 +17,7 @@ const toastDetails = {
   },
   warning: {
     icon: "fa-triangle-exclamation",
-    text: "Warning: Something Unusal happend, try later.",
+    text: "Warning: Something Unusual happened, try later.",
   },
   info: {
     icon: "fa-circle-info",
