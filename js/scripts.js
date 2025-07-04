@@ -771,3 +771,30 @@ function closeOverlay(profileOverlay) {
   if (profileOverlay == null) return;
   profileOverlay.style.display = "none";
 }
+
+
+document.querySelectorAll('.planbox a').forEach(btn => {
+   btn.addEventListener('click', e => {
+      e.preventDefault();
+
+      const planBox = e.target.closest('.planbox');
+      const title = planBox.querySelector('h4').innerText;
+      const price = planBox.querySelector('.prices strong').innerHTML;
+      const details = planBox.querySelectorAll('ul li');
+
+      document.getElementById('serviceTitle').innerText = title;
+      document.getElementById('servicePrice').innerHTML = price;
+      document.getElementById('detail1').innerText = details[0]?.innerText;
+      document.getElementById('detail2').innerText = details[1]?.innerText;
+      document.getElementById('detail3').innerText = details[2]?.innerText;
+      document.getElementById('detail4').innerText = details[3]?.innerText;
+
+      document.getElementById('bookingOverlay').style.display = 'block';
+      document.getElementById('bookingModal').style.display = 'block';
+   });
+});
+
+document.getElementById('bookingClose').addEventListener('click', () => {
+   document.getElementById('bookingOverlay').style.display = 'none';
+   document.getElementById('bookingModal').style.display = 'none';
+});
