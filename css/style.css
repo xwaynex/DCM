@@ -2531,6 +2531,34 @@ blockquote strong {
   height: 100%;
 }
 
+/*----- Clients Img-----*/
+
+#clients .clients {
+ margin-bottom: 20px
+}
+
+#clients .clients img {
+ filter: grayscale(100%);
+}
+#clients .clients  img:hover {
+ filter: grayscale(0%);
+}
+
+.carousel-item {
+  width: 120px;       /* Set desired width */
+  height: 80px;       /* Set desired height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;     /* Optional spacing between carousel items */
+}
+
+.carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Keeps aspect ratio */
+}
+
 /*----- Clients -----*/
 #clients {
   padding-top: 75px;
