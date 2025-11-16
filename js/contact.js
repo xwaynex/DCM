@@ -47,6 +47,10 @@ const createToast = (id, toastClass) => {
   toast.timeoutId = setTimeout(() => removeToast(toast), toastDetails.timer);
 };
 
+emailjs.init("javoUGRSIekxWVBnq");
+
+const time = new Date().toLocaleString(); // Full date and time string
+
 document.getElementById("contactForm").addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -98,21 +102,50 @@ document.getElementById("contactForm").addEventListener("submit", (e) => {
   </div>
 `;
 
-  Email.send({
-    SecureToken: "4bf53602-bc9d-44ee-b742-37c850f5a2a1",
-    To: "georgefarewell89@gmail.com",
-    From: "georgefarewell89@gmail.com",
-    Subject: "Client Enquiry from " + clientEmail.value,
-    Body: ebody,
-  }).then((message) => {
-    if (message === "OK") {
-      // Email sent successfully
-      createToast("1", "success");
-    } else {
-      // Email failed to send
+  // Email.send({
+  //   SecureToken: "4bf53602-bc9d-44ee-b742-37c850f5a2a1",
+  //   To: "bookingsmanagmentId@gmail.com",
+  //   From: "bookingsmanagmentId@gmail.com",
+  //   Subject: "Client Enquiry from " + clientEmail.value,
+  //   Body: ebody,
+  // }).then((message) => {
+  //   if (message === "OK") {
+  //     // Email sent successfully
+  //     createToast("1", "success");
+  //   } else {
+  //     // Email failed to send
+  //     createToast("2", "error");
+  //   }
+  // });
+
+  // return false;
+
+  // EmailJS API call
+  emailjs
+    .send("service_yfplne3", "template_b4gap4c", {
+      from_name: clientName.value,
+      from_email: clientEmail.value,
+      name: clientName.value,
+      message: clientMessage.value, // Your custom HTML content
+      time: time,
+      clientEmail: clientEmail.value,
+      clientPhoneNo: clientPhoneNo.value,
+      clientCountry: clientCountry.value,
+    })
+    .then((message) => {
+      if (message.status === 200) {
+        // Email sent successfully
+        createToast("1", "success");
+      } else {
+        // Email failed to send
+        createToast("2", "error");
+      }
+    })
+    .catch((error) => {
+      // Handle the error if needed
+      console.error("Failed to send email:", error);
       createToast("2", "error");
-    }
-  });
+    });
 
   return false;
 });
